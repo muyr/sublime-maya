@@ -33,12 +33,16 @@ import maya.cmds as mc
 mc.commandPort(sourceType = 'mel', name = '127.0.0.1:8888' )
 </pre>
 ###2. 在sublime窗口中
-在当前窗口中，选中代码,按下快捷键“ctrl+shift+x”，即可将代码发送到执行了第一步操作的maya窗口中运行。
+在当前窗口中，选中若干行代码（
+如果没有选中任何代码，则整个文件代码都被发送到maya运行）
 
-如果没有选中任何代码，则整个文件代码都被发送到maya运行
+#### 快捷键方式
+按下快捷键“ctrl+shift+x”，即可将代码发送到执行了第一步操作的maya窗口中运行。
 
+
+#### 命令行方式
 若快捷键不好用（跟别的快捷键冲突等情况），请执行菜单 View -> Show Console
-或者快捷键 ctrl + ` 调出python命令行，执行代码
+或者快捷键 ctrl + ` 调出python命令行，输入
 
 <pre>
 view.run_command('maya')
